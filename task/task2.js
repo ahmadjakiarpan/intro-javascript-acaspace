@@ -22,6 +22,7 @@ const dataUntukEmail = {
     tanggal: "15 Juli 2025",
     waktu: "14:00",
     tempat: "Gmeet",
+    batasWaktuConfirm: "14 Juli 2025",
     namaAnda: "Supardi",
     jabatan: "Manager",
     perusahaan: "PT. Hambalang",
@@ -35,10 +36,66 @@ const dataUntukEmailKedua = {
     tanggal: "16 Juli 2025",
     waktu: "10:00",
     tempat: "Gmeet",
+    batasWaktuConfirm: "15 Juli 2025",
     namaAnda: "Kasnudin",
     jabatan: "HRD",
     perusahaan: "PT. IKN",
     kontakAnda: "08123456689"   
 }
 
-console.log(`subjek undangan rapat proyek ${dataUntukEmail.namaProyek}`)
+console.log(`
+    subjek: undangan rapat proyek ${dataUntukEmailKedua.namaProyek}
+    Yth. ${dataUntukEmailKedua.namaPenerima}
+    Saya harap email ini menjangkau Anda dalam keadaan baik.
+    Saya ingin mengundang Anda untuk menghadiri rapat proyek ${dataUntukEmailKedua.namaProyek} yang akan diadakan pada:
+    Hari/tanggal: ${dataUntukEmailKedua.hari},${dataUntukEmailKedua.tanggal}
+    Waktu: ${dataUntukEmailKedua.waktu}
+    Tempat ${dataUntukEmailKedua.tempat}
+    Tujuan rapat ini adalah untuk membahas perkembangan terkini proyek dan langkah selanjutnya. Mohon konfirmasi kehadiran Anda sebelum ${dataUntukEmailKedua.batasWaktuConfirm}.
+    Terima kasih atas perhatian dan kerja samanya.
+    Hormat Saya,
+    ${dataUntukEmailKedua.namaAnda}
+    ${dataUntukEmailKedua.jabatan}
+    ${dataUntukEmailKedua.perusahaan}
+    ${dataUntukEmailKedua.kontakAnda}`)
+
+
+    console.log(`
+    subjek: undangan rapat proyek ${dataUntukEmail.namaProyek}
+    Yth. ${dataUntukEmail.namaPenerima}
+    Saya harap email ini menjangkau Anda dalam keadaan baik.
+    Saya ingin mengundang Anda untuk menghadiri rapat proyek ${dataUntukEmail.namaProyek} yang akan diadakan pada:
+    Hari/tanggal: ${dataUntukEmail.hari},${dataUntukEmail.tanggal}
+    Waktu: ${dataUntukEmail.waktu}
+    Tempat ${dataUntukEmail.tempat}
+    Tujuan rapat ini adalah untuk membahas perkembangan terkini proyek dan langkah selanjutnya. Mohon konfirmasi kehadiran Anda sebelum ${dataUntukEmail.batasWaktuConfirm}.
+    Terima kasih atas perhatian dan kerja samanya.
+    Hormat Saya,
+    ${dataUntukEmail.namaAnda}
+    ${dataUntukEmail.jabatan}
+    ${dataUntukEmail.perusahaan}
+    ${dataUntukEmail.kontakAnda}`)
+
+
+    // 2. 2️⃣ Method & Property
+
+const nama = "ramdlan faqih"
+console.log(nama)
+
+const namaTerpisah = nama.split (" ")
+console.log(namaTerpisah)
+
+const namaTergabung = namaTerpisah.join(" ")
+console.log(namaTergabung)
+
+const hurufAwalDepan = namaTergabung.charAt(0)
+console.log(hurufAwalDepan)
+
+const hurufSisaDepan = namaTergabung.slice(1)
+console.log(hurufSisaDepan)
+
+const hurufAwalBelakang = namaTergabung.charAt(8)
+console.log(hurufAwalBelakang)
+
+const hurufSisaBelakang = namaTergabung.slice(9)
+console.log(hurufSisaBelakang)
