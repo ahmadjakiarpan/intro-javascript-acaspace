@@ -85,17 +85,35 @@ console.log(nama)
 const namaTerpisah = nama.split (" ")
 console.log(namaTerpisah)
 
-const namaTergabung = namaTerpisah.join(" ")
-console.log(namaTergabung)
+const namaDepan = namaTerpisah[0]
+console.log(namaDepan)
 
-const hurufAwalDepan = namaTergabung.charAt(0)
+const namaBelakang = namaTerpisah[1]
+console.log(namaBelakang)
+
+const hurufAwalDepan = namaDepan.charAt(0)
 console.log(hurufAwalDepan)
 
-const hurufSisaDepan = namaTergabung.slice(1)
+const hurufSisaDepan = namaDepan.slice(1)
 console.log(hurufSisaDepan)
 
-const hurufAwalBelakang = namaTergabung.charAt(8)
+const hurufAwalBelakang = namaBelakang.charAt(0)
 console.log(hurufAwalBelakang)
 
-const hurufSisaBelakang = namaTergabung.slice(9)
+const hurufSisaBelakang = namaBelakang.slice(1)
 console.log(hurufSisaBelakang)
+
+const kapitalHurufAwalDepan = hurufAwalDepan.toUpperCase()
+console.log(kapitalHurufAwalDepan)
+
+const kapitalHurufAwalBelakang = hurufAwalBelakang.toUpperCase()
+console.log(kapitalHurufAwalBelakang)
+
+const formatNamaBaruDepan = kapitalHurufAwalDepan + hurufSisaDepan
+console.log(formatNamaBaruDepan)
+
+const formatNamaBaruBelakang = kapitalHurufAwalBelakang + hurufSisaBelakang
+console.log(formatNamaBaruBelakang)
+
+const formatBaru = formatNamaBaruDepan + " " + formatNamaBaruBelakang
+console.log(formatBaru)
