@@ -46,13 +46,13 @@ let umueNaekMotor = 17;
 let udin = 18;
 
 // apakah udin lebih dari atau sama dengan umurNaekMotor?
-console.log(udin > umueNaekMotor)
+console.log(udin > umueNaekMotor)  //true
 
 // apakah udin kurang dar umurNaekMotor?
-console.log(udin<umueNaekMotor)
+console.log(udin<umueNaekMotor) // false
 
 // apakah udin lebih dari atau sama dengan umurNaekMotor?
-console.log(udin >= umueNaekMotor)
+console.log(udin >= umueNaekMotor) // true
 
 // apakah udin kurang dari umurNaekMotor?
-console.log(udin<=umueNaekMotor)
+console.log(udin<=umueNaekMotor) // false
