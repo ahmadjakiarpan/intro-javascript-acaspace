@@ -69,6 +69,7 @@ const samsungGalaxy = [
     color: ["brown", "black", "blue"],
     },
 ]
+console.log(samsungGalaxy)
 
 // 2. Cek nilai minimal KKM dari 5 data siswa
 
