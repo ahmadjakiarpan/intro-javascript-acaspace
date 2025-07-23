@@ -18,7 +18,7 @@ for (let i = 0; i < hargaBarang.length; i++) {
     if (i !== 2) {
         total = hargaBarang[i];
     } else {
-        console.log(hargaBarang)
+        console.log("index kedua tidak boleh masuk")
     }
 }
 
